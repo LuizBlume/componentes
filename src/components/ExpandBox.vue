@@ -11,6 +11,10 @@ defineProps({
 content: {
     type: String,
     default: 'Valor padrão da minha caixa'
+},
+qty: {
+    type: Number,
+    default: 10
 }
 })
 </script>
@@ -21,6 +25,7 @@ content: {
     <div v-if="ShowBox" class="expand-box">
         <h1>{{ title }}</h1>
         <p>{{ content }}</p>
+        <p>Quantidade: {{ qty }}</p>
         <img src="" alt="">
     </div>
 </div>
